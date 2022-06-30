@@ -1,0 +1,21 @@
+[package]
+name = "monotonic-time"
+version = "1.0.0"
+authors = ["Charles Chege <charleschege@protonmail.ch>"]
+license = "Apache-2.0 OR MIT"
+edition = "2021"
+description = "A simple lightweight crate to convert seconds provided to `Coordinated Universal Time` (UTC) or ` Temps Atomique International` (TAI)."
+repository = "https://github.com/charleschege/Monotonic-Time"
+readme = "README.md"
+keywords = ["date", "time", "tai", "monotonic", "timestamp"]
+categories = ["accessibility", "embedded", "date-and-time"]
+[badges]
+maintenance = { status = "actively-developed" }
+
+
+[dependencies]
+
+[features]
+default = ["no_std"]
+std = []
+no_std = []

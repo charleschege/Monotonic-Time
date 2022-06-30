@@ -1,3 +1,4 @@
+#![cfg_attr(not(feature = "std"), no_std)]
 #![forbid(unsafe_code)]
 #![forbid(missing_docs)]
 #![doc = include_str!("../README.md")]
@@ -11,6 +12,10 @@ pub use contants::*;
 mod datetime_formats;
 pub use datetime_formats::*;
 
+#[cfg(feature = "std")]
+extern crate std;
+
+#[cfg(feature = "std")]
 #[cfg(test)]
 mod sanity_tests {
     use crate::DateTime;

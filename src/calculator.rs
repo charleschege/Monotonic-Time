@@ -87,7 +87,7 @@ impl DateTime {
     }
 
     /* TODO
-    /// COnverts `UTC` or `TAI` time to local timezone using `offset` provided
+    /// Converts `UTC` or `TAI` time to local timezone using `offset` provided
     pub fn to_timezone(&mut self, offset: i8) -> &mut Self {
         let mut hour = self.hour as i8;
         hour += offset;
