@@ -3,7 +3,7 @@
 A simple lightweight crate to convert seconds provided to `Coordinated Universal Time` (UTC) or ` Temps Atomique International` (TAI). 
 
 [![Rust](https://github.com/charleschege/Monotonic-Time/actions/workflows/rust.yml/badge.svg)](https://github.com/charleschege/Monotonic-Time/actions/workflows/rust.yml)
-[![Crates.io][crates-badge]](https://crates.io/crates/monotonic-time)
+![crates.io](https://img.shields.io/crates/v/monotonic-time.svg)
 
 
 #### Instantiate a DateTime
