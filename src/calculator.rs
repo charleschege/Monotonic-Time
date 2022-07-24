@@ -38,7 +38,12 @@ impl DateTime {
     /// by  utc_behind_by`
     pub fn to_taitime(&mut self, seconds: u64, utc_behind_by: u64) -> &mut Self {
         self.change_format(DateTimeFormat::Tai);
-        self.to_datetime(seconds + utc_behind_by)
+
+        if seconds == 0 {
+            self.to_datetime(seconds + 10)
+        } else {
+            self.to_datetime(seconds + utc_behind_by)
+        }
     }
 
     /// Convert the seconds provided to UTC
